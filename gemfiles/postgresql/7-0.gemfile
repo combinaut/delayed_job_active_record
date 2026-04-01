@@ -10,14 +10,14 @@ group :test do
   end
 
   platforms :ruby, :mswin, :mingw do
-    gem "pg", [">= 0.18", "< 2.0"]
+    gem "pg", "~> 1.1"
   end
 
   gem "rspec", ">= 2.11"
   gem "simplecov", ">= 0.20.0", require: false
   gem "simplecov-lcov", ">= 0.8.0", require: false
 
-  gem "activerecord", "~> 6.0.0"
+  gem "activerecord", "~> 7.0.1"
 
   gem "base64"
   gem "bigdecimal"
