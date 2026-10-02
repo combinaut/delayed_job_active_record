@@ -233,7 +233,7 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
     - name: Reinstall libpg
       if: ${{ matrix.ruby < '2.4' && contains(matrix.gemfile, 'postgresql') }}
       # version located via https://pkgs.org/search/?q=libpq5 and the Ubuntu 20.04 LTS package list
